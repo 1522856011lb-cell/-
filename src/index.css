@@ -1,0 +1,116 @@
+@import "tailwindcss";
+
+:root {
+  /* Default Girly Theme Variables */
+  --bg-primary: #FFFDF9;
+  --bg-surface: #FFFFFF;
+  --bg-surface-subtle: #FFF5F7;
+  --bg-card: #FFFFFF;
+  --border-color: #FFE4E8;
+  --border-subtle: #F3E5E3;
+  --text-primary: #3E3230;
+  --text-secondary: #7D6B68;
+  --text-muted: #A89592;
+  --accent-pink: #FF6B8B;
+  --accent-pink-soft: #FFF0F3;
+  --accent-green: #48BB78;
+  --accent-green-soft: #EBFBEE;
+  --accent-purple: #9F7AEA;
+  --accent-purple-soft: #F3E8FF;
+  --accent-amber: #ED8936;
+  --accent-amber-soft: #FFFAF0;
+  --radius-sm: 12px;
+  --radius-md: 18px;
+  --radius-lg: 24px;
+  --radius-xl: 32px;
+  --font-family: 'Quicksand', 'Nunito', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --shadow-main: 0 10px 30px -5px rgba(230, 200, 210, 0.3), 0 4px 12px -2px rgba(220, 210, 235, 0.2);
+}
+
+.theme-beast {
+  /* Hardcore Gym Beast Mode Theme Variables */
+  --bg-primary: #0F0F12;
+  --bg-surface: #18181C;
+  --bg-surface-subtle: #222228;
+  --bg-card: #18181C;
+  --border-color: #2E2E36;
+  --border-subtle: #3A3A44;
+  --text-primary: #F4F4F6;
+  --text-secondary: #A1A1AA;
+  --text-muted: #71717A;
+  --accent-pink: #22C55E; /* Neon green primary */
+  --accent-pink-soft: rgba(34, 197, 94, 0.15);
+  --accent-green: #10B981;
+  --accent-green-soft: rgba(16, 185, 129, 0.15);
+  --accent-purple: #3B82F6; /* Electric blue */
+  --accent-purple-soft: rgba(59, 130, 246, 0.15);
+  --accent-amber: #F59E0B; /* Intense amber */
+  --accent-amber-soft: rgba(245, 158, 11, 0.15);
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+  --radius-xl: 10px;
+  --font-family: 'Impact', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --shadow-main: 0 8px 24px rgba(0, 0, 0, 0.6);
+}
+
+@layer base {
+  body {
+    font-family: var(--font-family);
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    -webkit-tap-highlight-color: transparent;
+    transition: background-color 0.25s ease, color 0.25s ease;
+  }
+}
+
+/* Custom soft glow and ins card aesthetics */
+.shadow-soft {
+  box-shadow: var(--shadow-main);
+}
+
+.shadow-card {
+  box-shadow: 0 8px 24px -4px rgba(212, 192, 198, 0.2), 0 2px 6px -1px rgba(0, 0, 0, 0.04);
+}
+
+.theme-beast .shadow-card {
+  box-shadow: 0 8px 24px -4px rgba(0, 0, 0, 0.6), 0 2px 6px -1px rgba(0, 0, 0, 0.3);
+}
+
+.shadow-glow-pink {
+  box-shadow: 0 8px 25px rgba(255, 141, 161, 0.35);
+}
+
+.theme-beast .shadow-glow-pink {
+  box-shadow: 0 8px 25px rgba(34, 197, 94, 0.4);
+}
+
+.shadow-glow-mint {
+  box-shadow: 0 8px 25px rgba(104, 211, 145, 0.3);
+}
+
+.shadow-glow-purple {
+  box-shadow: 0 8px 25px rgba(183, 148, 244, 0.3);
+}
+
+/* Custom cute scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #F3D2DC;
+  border-radius: 9999px;
+}
+.theme-beast ::-webkit-scrollbar-thumb {
+  background: #3A3A44;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #E8B4C4;
+}
+.theme-beast ::-webkit-scrollbar-thumb:hover {
+  background: #22C55E;
+}

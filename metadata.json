@@ -1,0 +1,8 @@
+{
+  "name": "FitGlow",
+  "description": "可爱 ins 风身材与饮食健康管理应用，提供智能身体数据计算、AI 食物推荐与食谱生成、每日饮食追踪及个性化运动方案。",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
